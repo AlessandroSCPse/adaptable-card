@@ -1,0 +1,111 @@
+section {
+    padding: 40px 0;
+    border: 1px solid red;
+}
+
+/* Product card */
+.product-card {
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+.product-card a {
+    text-decoration: none;
+}
+.product-card img {
+    max-width: 100%;
+    display: block;
+}
+.product-card ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+/* Product card heading */
+.product-card .pc-related-products {
+    display: none;
+}
+
+/* Product card info */
+.product-card .squares {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.product-card .squares > * {
+    display: inline-block;
+    vertical-align: middle;
+}
+.product-card .squares .square {
+    width: 1rem;
+    height: 1rem;
+    background-color: salmon;
+    margin-right: 0.4rem;
+}
+.product-card .product-features {
+    margin-top: 0.7rem;      
+} 
+.product-card .product-features li {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+.product-card .product-features li i {
+    vertical-align: text-top;
+}
+
+@media screen and (min-width: 992px) {
+    /* Product card */
+    .product-card {
+        display: flex;
+    }
+    .product-card > div {
+        padding: 0 0.5rem;
+    }
+    /* Product main areas */
+    .product-card .pc-heading {
+        width: 30%;
+        order: 2;
+    }
+    .product-card .pc-image {
+        width: 40%;
+        order: 1;
+    }
+    .product-card .pc-info {
+        width: 30%;
+        order: 3;
+    }
+    /* Product card heading */
+    .product-card .pc-heading h2 {
+        margin-bottom: 0.4rem;
+    }
+    .product-card .pc-related-products {
+        display: block;
+    }
+    .product-card .pc-related-products ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .product-card .pc-related-products li {
+        width: 50%;
+        padding: 0.5rem;
+    }
+    .product-card .pc-related-products img {
+        max-width: 50%;
+    }
+
+    /* Product card image */
+    .product-card .pc-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Product card info */
+    .product-card .squares {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .product-card .product-features li {
+        display: block;
+    }
+}
